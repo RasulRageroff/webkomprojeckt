@@ -1,4 +1,7 @@
-﻿
+﻿@using System.Data
+@using Webmypcproject.Models;
+@model Webmypcproject.Data.UsersInput;
+@using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -9,25 +12,29 @@
     
 }
 <div class="text-center">
-    <form class="form-signin">
+    <div class="card-body">
 
-        <h2 class="zagolovok mb-3"</><>Страница регистрации</h2>
+        <div class="form-signin">
+            <h1 class="zagolovok mb-3"</><>RASUL PC</h1>
 
-        <div class="createform">
 
-        <input type="email" id="inputEmail" class="form-control" placeholder="Логин" required="" autofocus="">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required="">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Повторите пароль" required="">
+            @using (Html.BeginForm("Index", "RegistrationPage", FormMethod.Post))
+            {
 
+               
+
+                @Html.TextBoxFor(m => m.Login, new { @class = "form-control", @placeholder = "Логин" })
+
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Пароль" })
+
+                <div class="btnlogin">
+                    <input type="submit" value="Создать" class="btn btn-lg btn-primary btn-block">
+                    
+                </div>
+                <img class="mb-4" src="/img/hyperpc.jpg" alt="" width="150" height="150">
+                <h1 class="h3 mb-3 font-weight-normal">Собери компьютер мечты</h1>
+            }
         </div>
-        @{
-            
-        }
-        <div class="btncreate">
+    </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="RegistrationPage">Создать</a></button>
-        </div>
-        
-
-    </form>
 </div>

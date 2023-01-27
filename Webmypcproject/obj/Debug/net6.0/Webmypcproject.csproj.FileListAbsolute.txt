@@ -26,12 +26,6 @@ C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\obj\Debug\net6.0\Web
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\obj\Debug\net6.0\ref\Webmypcproject.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Azure.Identity.dll
-C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Web.Mvc.dll
-C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Web.Razor.dll
-C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Web.Helpers.dll
-C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
-C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
-C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -53,7 +47,6 @@ C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Mic
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
-C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Drawing.Common.dll
@@ -80,3 +73,11 @@ C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Dap
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Rasulik\source\repos\Webmypcproject\Webmypcproject\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

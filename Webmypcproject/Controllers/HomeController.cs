@@ -1,39 +1,74 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Webmypcproject.Models;
+using Webmypcproject.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Data;
-using Webmypcproject.Models;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
+
+
 
 using Dapper;
+using System.Security.Claims;
 
 namespace Webmypcproject.Controllers
 {
     public class HomeController : Controller
     {
-         
+        
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _config;
-        public HomeController(ILogger<HomeController> logger, IConfiguration config)
+        public HomeController(ILogger<HomeController> logger, IConfiguration config, RasulpcContext rasulpcContext)
         {
             
             _logger = logger;
             _config = config;
             
         }
-
+        [HttpGet]
         public IActionResult Index()
        {
-            var bdmodel = Connection;
-            
-           return View(bdmodel);
+            UsersInput usersinput = new UsersInput();
+          
+
+            //RasulpcContext rasulpcContext;
+            //User userContext = new User();
+
+           
+
+            return View(usersinput);
        }
+        [HttpPost]
+        public IActionResult Index(UsersInput usersinput)
+        {
+            RasulpcContext rasulpcContext = new RasulpcContext();
+            var status = rasulpcContext.Users.Where(m => m.Login == usersinput.Login && m.Password == usersinput.Password).FirstOrDefault();
+            if(status == null)
+            {
+                ViewBag.LoginStatus = 0;
+            }
+            else
+            {
+                switch (status.IdRole)
+                {
+                    case 1:
+                       
+
+                        break;
+                    case 2:
+                        return RedirectToAction("Mex", "Home");
+                        break;
+                }
+            }
+
+
+
+            return View(usersinput);
+        }
+
         
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -42,27 +77,14 @@ namespace Webmypcproject.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-
-        public IDbConnection Connection
+        public IActionResult Mex()
         {
-            get
-            {
-                return new SqlConnection(_config.GetConnectionString("DefaultConnection"));
-            }
-        } 
-
-
-        public class Logininacc
-        {
-
-        
-            public string Login { get; set; }
-
-            public string Password { get; set; }
-        
-                    
-        
+            return View();
         }
+
+
+
+
 
 
 
