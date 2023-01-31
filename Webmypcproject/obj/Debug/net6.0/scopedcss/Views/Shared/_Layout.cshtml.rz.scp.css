@@ -46,3 +46,10 @@ button.accept-policy[b-8v11h66o2w] {
   white-space: nowrap;
   line-height: 60px;
 }
+.menuinputs[b-8v11h66o2w]{
+    
+   display:flex;
+   align-content: space-between;
+
+}
+

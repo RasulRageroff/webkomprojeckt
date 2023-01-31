@@ -1,0 +1,89 @@
+﻿@using System.Data
+@using Webmypcproject.Models;
+@model Webmypcproject.Data.UsersInput;
+@using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database
+@{
+    ViewData["Title"] = "Menu Page";
+
+
+    //<input action="TxtPassword" type="password" id="inputPassword" name="TxbPassword" class="form-control" placeholder="Пароль" required="">
+}
+<style type="text/css">
+    .btnmenuinputs {
+        background-color: white;
+        font-family: segoe print;
+        width: 180px;
+        height: 40px;
+        margin: 25px;
+        font-weight: 600;
+    }
+
+    .btnmenuinputs:hover {
+            background-color: #D3D3D3;
+    }
+
+    .menuinputs{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .text-center{
+        display: flex;
+        justify-content: center;
+    }
+    .header{
+        display: flex;
+        flex-flow: row;
+       justify-content: center;
+    }
+    .headercontent{
+        margin-left: 150px;
+        margin-right: 150px;
+        
+    }
+    .namm{
+        padding-top: 30px;
+    }
+    .btnexit{
+        background-color: black;
+        color: white;
+    }
+     .btnexit:hover {
+            color: red;
+            background: black;
+     }
+</style>
+
+   <div class="header">
+
+    
+    
+    <div class="headercontent"><img class="mb-4" src="/img/user.png" alt="" width="60" height="50"> НИКНЕЙМ  </div>
+
+
+   </div>
+
+
+<div class="text-center">
+    
+    <div class="menuinputs">
+
+        <input type="button" value="Мои PC" class="btnmenuinputs">
+        <input type="button" value="Создать PC" class="btnmenuinputs">
+        <input type="button" value="Топик PC" class="btnmenuinputs">
+        <input type="button" value="Комплектующие" class="btnmenuinputs">
+        <input type="button" value="ПО для PC" class="btnmenuinputs">
+        <input type="button" value="Выйти" class="btnmenuinputs btnexit">
+        
+
+
+
+
+    </div>
+       
+       
+       
+
+</div>
+
+

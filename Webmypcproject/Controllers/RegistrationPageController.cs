@@ -33,7 +33,7 @@ namespace Webmypcproject.Controllers
 
             if (rasulpcContext.Users.Count(x => x.Login == usersInput.Login) > 0)
             {
-                var message = "kek";
+                
             }
             else
             {

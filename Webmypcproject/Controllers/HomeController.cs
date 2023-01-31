@@ -57,7 +57,7 @@ namespace Webmypcproject.Controllers
 
                         break;
                     case 2:
-                        return RedirectToAction("Mex", "Home");
+                        return RedirectToAction("Menu", "Home");
                         break;
                 }
             }
@@ -77,7 +77,7 @@ namespace Webmypcproject.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Mex()
+        public IActionResult Menu()
         {
             return View();
         }
